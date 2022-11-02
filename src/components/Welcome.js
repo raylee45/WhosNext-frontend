@@ -1,15 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
+// import Button from 'react-bootstrap/Button';
+import SignupModal from './popUps/SignupModal';
 
+// const setAuthtoken = true;
 
 const Welcome = () => {
+    const {showSignupModal, setShowSignupModal} = useState(false);
+
+    const handleClick = () => {
+        console.log('clicked')
+        setShowSignupModal(true);
+    }
+
     return (
         <>
-        <div>
-            <h1>WhosNext</h1>
-            <p>Dating for the shallow end of the pool.</p> 
+        
+        <div className='container-home'>
+            <div className='tagline'>
+                <h1>WhosNext</h1>
+                <p>Dating...for those who see the bigger picture.</p>
+            </div>
+            <SignupModal />
+            {/* <Button class='start' variant="primary" onclick={handleClick}>{setAuthtoken ? 'Get Started' : 'Signout'}
+            </Button> */}
         </div>
-        <Button variant="primary">Get Started</Button>{' '}
-        </>
+        
+        </>    
     )
 }
 
