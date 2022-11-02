@@ -1,74 +1,93 @@
-.carousel.vertical .carousel-inner {
-    height: 100%;
-  }
-  .carousel.vertical .carousel-inner > .item {
-    transition: .6s ease-in-out top;
-  }
-  @media all and (transform-3d) {
-  .carousel.vertical .carousel-inner > .item {
-      transition: transform .6s ease-in-out;
-      backface-visibility: hidden;
-      perspective: 1000;
-    }
-  .carousel.vertical .carousel-inner > .item.next,
-  .carousel.vertical .carousel-inner > .item.active.right {
-      top: 0;
-      transform: translate3d(0, 100%, 0);
-    }
-  .carousel.vertical .carousel-inner > .item.prev,
-  .carousel.vertical .carousel-inner > .item.active.left {
-      top: 0;
-      transform: translate3d(0, -100%, 0);
-    }
-  .carousel.vertical .carousel-inner > .item.next.left,
-  .carousel.vertical .carousel-inner > .item.prev.right,
-  .carousel.vertical .carousel-inner > .item.active {
-      top: 0;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  .carousel.vertical .carousel-inner > .active {
-    top: 0;
-  }
-  .carousel.vertical .carousel-inner > .next,
-  .carousel.vertical .carousel-inner > .prev {
-    top: 0;
-    height: 100%;
-    width: 100%;
-  }
-  .carousel.vertical .carousel-inner > .next {
-    left: 0;
-    top: 100%;
-  }
-  .carousel.vertical .carousel-inner > .prev {
-    left: 0;
-    top: -100%
-  }
-  .carousel.vertical .carousel-inner > .next.left,
-  .carousel.vertical .carousel-inner > .prev.right {
-    top: 0;
-  }
-  .carousel.vertical .carousel-inner > .active.left {
-    left: 0;
-    top: -100%;
-  }
-  .carousel.vertical .carousel-inner > .active.right {
-    left: 0;
-    top: 100%;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 
-  .carousel.vertical .carousel-indicators {
-    right: 20px;
-    top: 50%;
-    transform: translate(-50%);
-    bottom: auto;
-    left: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
-}
-.carousel.vertical .carousel-indicators li {
-    display: block;
-    margin: 5px 0;
+.text-bold{
+  color: #111; 
+  font-family: 'Readex Pro', sans-serif; 
+  font-size: 100px; 
+  font-weight: bold; 
+  letter-spacing: -1px; 
+  line-height: 1; 
+  
 }
 
+
+html{
+  margin:0;
+  padding:0;
+}
+
+body{
+  text-align:center;
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+/* .carousel-wrapper{
+  bottom: auto;
+  width: 100%;
+  height: 15%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 100%);
+}
+.carousel-wrapper .carousel-control.right {
+top: auto;
+bottom: 0;
+background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.carousel-wrapper .carousel-control .glyphicon {
+-webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+}
+.carousel-wrapper .carousel-indicators {
+bottom: auto;
+top: 50%;
+left: auto;
+right: 10px;
+width: 14px;
+margin: 0;
+-webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+}
+.carousel-wrapper .carousel.item > .item {
+left: 0;
+top: 0;
+}
+.carousel-wrapper .carousel .carousel.item > .item > img {
+width: 100%;
+}
+.carousel-wrapper carousel.item > .item.next,
+.carousel-wrapper carousel.item > .item.active.right {
+-webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+top: 0;
+}
+.carousel-wrapper carousel.item > .item.prev,
+.carousel-wrapper carousel.item > .item.active.left {
+-webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+top: 0;
+}
+.carousel-wrapper carousel.item > .item.next.left,
+.carousel-wrapper carousel.item > .item.prev.right,
+.carousel-wrapper carousel.item > .item.active {
+-webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+top: 0;
+}
+.carousel-wrapper carousel.item > .active,
+.carousel-wrapper carousel.item > .next.left,
+.carousel-wrapper carousel.item .prev.right {
+top: 0;
+}
+.carousel-wrapper carousel.item > .next,
+.carousel-wrapper carousel.item > .active.right {
+top: 100%;
+left: 0;
+}
+.carousel-wrapper carousel.item > .prev,
+.carousel-wrapper carousel.item > .active.left {
+top: -100%;
+left: 0;
+} */

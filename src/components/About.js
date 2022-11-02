@@ -1,48 +1,86 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import Carousel from 'react-bootstrap/Carousel';
+import Pictures from '../Pictures/heart.png';
 import '../About.css'
+
 
 const About = () => {
     return (
- 
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-50" src="https://cdn.pixabay.com/photo/2012/04/26/19/43/arrow-42916_1280.png" alt="Who's Next?"/>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Meet the Creators"/>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Tsung"/>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Ray"/>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Jared"/>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Nadia"/>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    
+        <div class ="carousel-wrapper">
+        <Carousel axis fade showIndicators>
+        <Carousel.Item>
+                <div>
+            </div>
+                <Carousel.Caption>
+                   <span className= "text-bold"> WH❤️'S NEXT</span>
+                    <p>We made this app to ...</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+            <div style= {{backgroundImage:`url(${Pictures})`, backgroundPosition:'center center', backgroundSize: 'cover', backgroundRepeat:'no-repeat', height: '90vh'}}>
+               
+                    
+                </div>
+
+                <Carousel.Caption>
+                    <h3>Meet the creators</h3>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+            <div style= {{backgroundImage:`url(${Pictures})`, backgroundPosition:'center center', backgroundSize: 'cover', backgroundRepeat:'no-epeat', height: '90vh'}}>
+                <h3>WH❤️'S NEXT?</h3>
+                    
+                </div>
+                <Carousel.Caption>
+                    <h3>Tsung</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+            <div style= {{backgroundImage:`url(${Pictures})`, backgroundPosition:'center center', backgroundSize: 'cover', backgroundRepeat:'no-repeat', height: '90vh'}}>
+                <h3>WH❤️'S NEXT?</h3>
+                    
+                </div>
+
+                <Carousel.Caption>
+                    <h3>Ray</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+            <div className= "w-100 d-flex flex-column justify-content-center align-items-center text-black" style= {{backgroundImage:`url(${Pictures})`, backgroundPosition:'center center', backgroundSize: 'cover', backgroundRepeat:'no-repeat', height: '90vh' }}>
+                <h3>WH❤️'S NEXT?</h3>
+                    
+                </div>
+                <Carousel.Caption>
+                    <h3>Jared</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+            <div className= "w-100 d-flex flex-column justify-content-center align-items-center text-black" style= {{backgroundImage:`url(${Pictures})`, backgroundPosition:'center center', backgroundSize: 'cover', backgroundRepeat:'no-repeat', height: '90vh',  }}>
+                    
+                </div>
+
+                <Carousel.Caption>
+                    <h3>Nadia</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+
+          
+
+
+        </Carousel>
+</div>
+
+
+
+
     )
 
 }
