@@ -8,6 +8,7 @@ import '../About.css'
 
 const About = () => {
     return (
+        <div className= "about">
         <div class ="carousel-wrapper">
         <Carousel axis fade showIndicators>
         <Carousel.Item>
@@ -77,7 +78,7 @@ const About = () => {
 
         </Carousel>
 </div>
-
+</div>
 
 
 
