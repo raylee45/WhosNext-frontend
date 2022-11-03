@@ -67,4 +67,65 @@ body {
 
 /* ChatRoom */
 
+.chatRoom {
+  background: linear-gradient(#e18bba,#f5f0f3);
+  box-shadow: coral;
+  width: 30%;
+  text-align: left;
+  z-index: 1;
+  border-radius: 10px;
+  height: 90vh;
+}
 
+.option{
+  font-weight: bold;
+}
+
+.chatRoom .displayHeader{
+  background: white ;
+  border-radius: 10px 10px 0px 0px;
+  height: 100px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatRoom .option{
+  border: none;
+  background-color: darksalmon;
+  border-bottom: solid 4px red;
+  font-size: 20px;
+  margin: 2px;
+  padding: 10px;
+}
+
+.chatRoom .option:disabled{
+  border-bottom: solid 4px grey;
+}
+
+.chatRoom .profile{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.img-container{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+/* Messages */
+.conversation{
+  padding: 20px;
+  height: 55vh;
+}
+
+ 
