@@ -9,9 +9,9 @@ const Signup = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [dob_day, setDob_Day] = useState('');
-    const [dob_month, setDob_Month] = useState('');
-    const [dob_year, setDob_Year] = useState('');
+    const [day, setDay] = useState('');
+    const [month, setMonth] = useState('');
+    const [year, setYear] = useState('');
     const [gender, setGender] = useState('');
     const [preference, setPreference] = useState('');
     const [image, setImage] = useState('');
@@ -35,15 +35,15 @@ const Signup = () => {
     }
 
     const handleDobDay = (e) => {
-        setDob_Day(e.target.value);
+        setDay(e.target.value);
     }
 
     const handleDobMonth = (e) => {
-        setDob_Month(e.target.value);
+        setMonth(e.target.value);
     }
 
     const handleDobYear = (e) => {
-        setDob_Year(e.target.value);
+        setYear(e.target.value);
     }
 
     const handleGender = (e) => {
@@ -67,7 +67,7 @@ const Signup = () => {
         // make sure password and confirm password are equal
         // password length >= 8 characters
         if (password === confirmPassword && password.length >= 8) {
-            const newUser = { name, email, password, dob_day, dob_month, dob_year, gender, preference, about, image};
+            const newUser = { name, email, password, dob_day: day, dob_month: month, dob_year: year, gender, preference, about, image };
             axios.post(`${REACT_APP_SERVER_URL}/users/signup`, newUser)
             .then(response => {
                 console.log('===> Yay, new user');
@@ -81,7 +81,7 @@ const Signup = () => {
         }
     }
 
-    if (redirect) return <Redirect to="/profile" /> // You can have them redirected to profile (your choice)
+    if (redirect) return <Redirect to="/login" /> // You can have them redirected to profile (your choice)
 
     return (
         <div className="row mt-3">
@@ -90,44 +90,42 @@ const Signup = () => {
                     {/* <h2 className="py-2">Signup</h2> */}
                     <form onSubmit={handleSubmit}>
                         
-                        <div className="form-group">
-                            <label htmlFor="name">Name</label>
-                            <input type="text" name="name" value={name} onChange={handleName} className="form-control"/>
+                        <div>
+                            <input type="text" name="name" placeholder="Name" value={name} onChange={handleName} className="form-control"/>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Email" value={email} onChange={handleEmail} className="form-control"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="email">Email</label>
-                            <input type="email" name="email" value={email} onChange={handleEmail} className="form-control"/>
+                            <input type="password" name="password" placeholder="Password" value={password} onChange={handlePassword} className="form-control"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="password">Password</label>
-                            <input type="password" name="password" value={password} onChange={handlePassword} className="form-control"/>
+                            <input type="password" name="confirmPassword" placeholder="Confirm password" value={confirmPassword} onChange={handleConfirmPassword} className="form-control"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="confirmPassword">Confirm Password</label>
-                            <input type="password" name="confirmPassword" value={confirmPassword} onChange={handleConfirmPassword} className="form-control"/>
+                            <input type="text" name="day" placeholder="Day"value={day} onChange={handleDobDay} className="form-control"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="dob_day">Dob_Day</label>
-                            <input type="text" name="dob_day" value={dob_day} onChange={handleDobDay} className="form-control"/>
+                            <input type="text" name="month" placeholder="Month"value={month} onChange={handleDobMonth} className="form-control"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="dob_month">Dob_Month</label>
-                            <input type="text" name="dob_month" value={dob_month} onChange={handleDobMonth} className="form-control"/>
+                            <input type="text" name="year" placeholder="Year" value={year} onChange={handleDobYear} className="form-control"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="dob_year">Dob_Year</label>
-                            <input type="text" name="dob_year" value={dob_year} onChange={handleDobYear} className="form-control"/>
+                            <input type="text" name="gender" placeholder="Gender" value={gender} onChange={handleGender} className="form-control"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="gender">Gender</label>
-                            <input type="text" name="gender" value={gender} onChange={handleGender} className="form-control"/>
+                            <input type="text" name="preference" placeholder="Preference" value={preference} onChange={handlePreference} className="form-control"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="preference">Preference</label>
-                            <input type="text" name="preference" value={preference} onChange={handlePreference} className="form-control"/>
+                            <input type="text" name="image" placeholder="Image" value={image} onChange={handleImage} className="form-control"/>
                         </div>
-                        {/* <button type="submit" className="btn btn-primary float-right">Submit</button> */}
+                        <div className="form-group">
+                            <input type="text" name="about" placeholder="About" value={about} onChange={handleAbout} className="form-control"/>
+                        </div>
+                        <button type="submit" className="btn btn-primary float-right" href='/profile'>Submit</button>
                     </form>
+                    
                 </div>
             </div>
         </div>

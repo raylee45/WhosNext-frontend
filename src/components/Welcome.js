@@ -18,7 +18,7 @@ const Welcome = () => {
         <div className='container-home'>
             <div className='tagline'>
                 <h1>WhosNext</h1>
-                <p>Dating...for those who see the bigger picture.</p>
+                <p>The NEXT one may BE the ONE.</p>
             </div>
             <SignupModal />
             {/* <Button class='start' variant="primary" onclick={handleClick}>{setAuthtoken ? 'Get Started' : 'Signout'}
