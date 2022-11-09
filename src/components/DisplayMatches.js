@@ -1,9 +1,15 @@
 import React from 'react';
+import Conversation from './Conversation';
+import MessageInput from './MessageInput';
+import DisplayHeader from './DisplayHeader';
 
-const DisplayMatches = () => {
+const DisplayMatches = ({user}) => {
     return (
-        <div className="displayMatches"> 
-            
+        <div className ="chatRoom">
+            <DisplayHeader user={user}/>
+        
+        <Conversation/>
+        <MessageInput/>
         </div>
     )
 }

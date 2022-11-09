@@ -2,9 +2,11 @@ import React from 'react';
 
 const Conversation = () => {
     return (
-        <div className={"conversation"}>
-            
+        <>
+        <div className="conversation">
+ 
         </div>
+        </>
     )
 }
 
