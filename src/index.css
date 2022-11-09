@@ -3,33 +3,12 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-
-/* .modal {
-  outline: none;
-  background: white;
-  font-size: 1.6rem;
-  width: 76rem;
-  max-width: 90%;
+.sidebar-container {
+  border: 5px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  z-index: 15;
-  min-height: 47rem;
-
-  will-change: transform;
-  transform: translate3d(0, 0, 0);
+  align-content: flex-start;
 }
-
-@media (max-width: 768px) {
-  .modal {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 0;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-} */
-
 .container-home {
   display: flexbox;
   justify-content: space-between;
