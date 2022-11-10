@@ -1,0 +1,22 @@
+.buttons{
+    position: fixed;
+    bottom: 20vh;
+    display:flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.buttons .MuiIconButton-root{
+    background-color: violet;
+    box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3) !important;
+}
+
+.swipeRight{
+    padding: 3vw !important;
+    color: pink;
+}
+
+.swipeLeft{
+    padding: 3vw !important;
+    color : red !important;
+}

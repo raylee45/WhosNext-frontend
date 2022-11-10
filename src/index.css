@@ -1,7 +1,14 @@
-html {
+
+*{
+  margin: 0;
+}
+
+body {
+
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  text-align: center;
 }
 section {
   margin-top: 10em;
@@ -31,4 +38,151 @@ h1 {
 .logout-link {
   cursor: pointer;
 }
+
+
+/* Matches */
+
+.matches{
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  width: 100%;
+  height: 100%;
+}
+
+.matches .setMatches{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100 vh;
+   
+}
+
+
+
+.matches .matchedPerson {
+  width: 400px;
+  height: 650px;
+}
+
+.card {
+  box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.30);
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.cardContent {
+  width: 100%;
+  height: 100%;
+}
+
+/* .swipe:last-of-type {
+
+} */
+
+.card h3 { 
+  margin-top: 0;
+  color: black;
+  position: absolute;
+}
+
+/* .matches .aboutMe{
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+} */
+
+/* ChatRoom */
+
+.chatRoom {
+  background: white;
+  box-shadow: coral;
+  width: 30%;
+  text-align: left;
+  z-index: 1;
+  border-radius: 10px;
+  height: 90vh;
+}
+
+.option{
+  font-weight: bold;
+}
+
+.chatRoom .displayHeader{
+  background: pink ;
+  border-radius: 10px 10px 0px 0px;
+  height: 100px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatRoom .option{
+  border: none;
+  background-color: white;
+  border: solid 4px black;
+  font-size: 20px;
+  margin: 2px;
+  padding: 10px;
+}
+
+.chatRoom .option:disabled{
+  border-bottom: solid 4px grey;
+}
+
+.chatRoom .profile{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.img-container{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+/* Messages */
+.conversation{
+  padding: 20px;
+  height: 60vh;
+  overflow-y:auto;
+}
+
+/* MessageInput */
+.messageInput{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+
+.swipe{
+  position: absolute;
+  background-color: lightpink;
+  width: 600px;
+  padding:20px;
+  max-width: 85vw;
+  height: 50vh;
+  border-radius: 20px;
+  background-size: cover;
+  
+}
+
 
