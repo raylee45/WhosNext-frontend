@@ -30,7 +30,7 @@ const Profile = (props) => {
 
    const userData = user ?
    (<div>
-       <img src={image} alt="John Wick" />
+       <img src={image} alt="profile-image"/>
        <p>ID: {id}</p>
        <p>Name: {name}</p>
        <p>Email: {email}</p>
@@ -91,7 +91,7 @@ const Profile = (props) => {
     
         return(
             <div className="profile-image">
-                <img src={props.image} alt="Taylot Swift" />
+                <img src={props.image} alt="profile-image" />
                 <Button onClick={props.onEdit}>Edit</Button>
                 <Button onClick={props.onDelete}>Delete</Button>
             </div>
@@ -157,7 +157,7 @@ const Profile = (props) => {
     
             <section className='pictureSection'>
                 <div className="profileImage-container"> 
-                    {<ProfileImage onDelete={handleImageDelete} onEdit={handleImageEdit} image={profileImage}/>}
+                    {/* {<ProfileImage onDelete={handleImageDelete} onEdit={handleImageEdit} image={profileImage}/>} */}
                     
                 </div>  
             </section>             
