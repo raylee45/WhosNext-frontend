@@ -1,15 +1,11 @@
-import React from 'react';
-import {useState} from 'react';
+import { useState} from 'react'
+import axios from 'axios'
+import React from 'react'
 
 const MessageInput = () => {
-    const [content, setContent]= useState(null)
-
-    return (
-        <div className="messageInput">
-        <textarea value={''} onChange={(e) => setContent(e.target.value)}/>
-        <button className='submit' >Submit</button>
-        </div>
-    )
+    return <div className='message'>
+        
+    </div>
 }
 
 export default MessageInput;

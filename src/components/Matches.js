@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import ChatRoom from "./ChatRoom";
 import { FrameValue } from "@react-spring/web";
+import DisplayMatches from "./DisplayMatches";
 import axios from "axios";
 import { SettingsSuggestRounded, SwipeDown } from "@mui/icons-material";
 import SwipeButtons from "./SwipeButtons";
@@ -86,8 +87,10 @@ const Matches = (props) => {
             </TinderCard> 
             
           ))}
+          
           <SwipeButtons />
           </div>
+          <DisplayMatches />
         </div>
   );
 }

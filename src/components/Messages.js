@@ -4,10 +4,13 @@ import MessageInput from './MessageInput';
 
 const Messages = () => {
     return (
-        <>
-        <Conversation/>
+    <div>
+        <Conversation
+        />
+        
+        
         <MessageInput/>
-        </>
+        </div>
     )
 }
 
