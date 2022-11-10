@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+.text-bold{
+  color: #111; 
+  font-family: 'Readex Pro', sans-serif; 
+  font-size: 100px; 
+  font-weight: bold; 
+  letter-spacing: -1px; 
+  line-height: 1; 
+  
+}
+
+
+html{
+  margin:0;
+  padding:0;
+}
+
+body{
+  text-align:center;
+  background:linear-gradient(to bottom right, purple, pink,white);;
+}
+
+.carousel-wrapper{
+overflow-y:auto;
+}
