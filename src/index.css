@@ -8,7 +8,25 @@ body {
   font-family: sans-serif;
   text-align: center;
 }
-​
+.sidebar-container {
+  border: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.container-home {
+  display: flexbox;
+  justify-content: space-between;
+  margin-top: 15em;
+}
+h1 {
+
+  font-size: 100px;
+}
+.tagline {
+  font-weight: bold; 
+}
+
 .logout-link {
   cursor: pointer;
 }
